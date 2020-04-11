@@ -41,7 +41,7 @@ html {
 
 .title {
 	position: fixed;
-	top: -3px;
+	bottom: 3px;
 	font-family: sans-serif;
 	color: white;
 	left: 4.5%;
