@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html scroll>
+	<head>
+		<title>ToasterSploit</title>
+		<link rel="icon" href="Files/Toaster.png">
+		<link rel="stylesheet" type="text/css" href="Files/Styles.css">
+		<link rel="stylesheet" type="text/css" href="Files/mdb.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	</head>
+	<body style="margin: 0;">
+		<img src="Files/light.png" alt="toastersploit light" class="light">
+		<img src="Files/dark.png" alt="toastersploit dark" class="dark">
+		<iframe frameborder="0" height="100%" width="100%" src="./Files/bg.html" style="top: 0; bottom: 0; left: 0;  right: 0; position: absolute; z-index: -99; width: 100%; height: 100% overflow: hidden;">
+		</iframe>
+		<h1 class="titleI">Welcome to toastersploit</h1>
+		<h2 class="info">Toastersploit is an lua executor,
+		what means you can execute scripts in roblox.
+		You can do thing like infinity jump, teleporting no gravity, speed or in games like jailbreak infinity nitro,
+		and even more. We have default scripts but you can also get scripts from the internet, 
+		a good site for scripts is <a href="https://robloxscripts.com/">https://robloxscripts.com/</a></h2>
+		<div style="top: 10000px; left: 0; position: absolute; background-color: black; width: 100px; height: 100px; z-index: -99;"></div>
+
+		<div class="topbar" id="topbar">
+			<img src="Files/Toaster.png" id="icon" class="icon">
+			<h1 class="title">ToaterSploit</h1>
+			<button id="fadebutton1" class="Info scrollbutton" onclick="
+			  document.body.scrollTop = 640;
+			  document.documentElement.scrollTop = 640;
+			  ">Info</button>
+			  <button id="fadebutton2" class="download scrollbutton" onclick="
+			  document.body.scrollTop =1600;
+			  document.documentElement.scrollTop =1600;
+			  ">Download</button>
+			  <li class="nav-item">
+			  	<a href="https://twitter.com/toastersploit" class="nav-link waves-effect waves-light" target="_blank">
+			  		<i class="fab fa-twitter"></i>
+			  	</a>
+			  </li>
+			  <li class="nav-item">
+			  	<a href="https://www.youtube.com/channel/UCY9K8edvrb0RvJYT_d9daIA" class="nav-link waves-effect waves-light" target="_blank">
+			  		<i class="fab fa-youtube"></i>
+			  	</a>
+			  </li>
+			  <li class="nav-item">
+			  	<a href="https://github.com/ToasterSploit" class="nav-link waves-effect waves-light" target="_blank">
+			  		<i class="fab fa-github"></i>
+			  	</a>
+			  </li>
+		</div>
+		<script>
+			var mybutton = document.getElementById("topbar");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+			    mybutton.style.height = "8%";
+			    mybutton.style.width = "100%";
+			    $("#fadebutton1").fadeOut(230);
+			    $("#fadebutton2").fadeOut(230);
+
+			  } else {
+			    mybutton.style.height = "100%";
+			    mybutton.style.width = "25%";
+			    $("#fadebutton1").fadeIn(100);
+			    $("#fadebutton2").fadeIn(100);
+			  }
+			}
+		</script>
+	</body>
+</html
