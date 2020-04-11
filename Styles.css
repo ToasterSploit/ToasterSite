@@ -41,12 +41,12 @@ html {
 
 .title {
 	position: fixed;
-	bottom: 10px;
 	font-family: sans-serif;
 	color: white;
 	left: 4.5%;
 	width: 5%;
 	user-select: none;
+	top: -9px;
 }
 
 .scrollbutton {
