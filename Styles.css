@@ -46,7 +46,7 @@ html {
 	left: 4.5%;
 	width: 5%;
 	user-select: none;
-	top: -9px; 
+	top: -9px;
 }
 
 .scrollbutton {
@@ -55,7 +55,7 @@ html {
 	border-style: none;
 	position: relative;
 	user-select: none;
-	margin: 22% auto;
+	margin: 22% 25%;
 	cursor: pointer;
 	font-size: 25px;
 	display: block;
@@ -63,13 +63,7 @@ html {
 	width: 25%;
 	height: 10%;
 	color: white;
-}
-
-.titleI {
-	position: absolute;
-	top: 800px;
-	left: 36%;
-	font-family: sans-serif;
+	text-align: left;
 }
 
 .nav-item {
@@ -91,42 +85,34 @@ html {
 }
 
 .nav-link {
-	background-color: rgba(0, 0, 0, 0);
-	box-sizing: border-box;
-	color: rgb(255, 255, 255);
-	cursor: pointer;
-	display: block;
-	font-family: Roboto, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	height: auto;
-	line-height: 24px;
-	list-style-image: none;
-	list-style-position: outside;
-	list-style-type: none;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	padding-bottom: 8px;
-	padding-left: 6px;
-	padding-right: 6px;
-	padding-top: 8px;
-	position: relative;
-	text-align: left;
-	text-decoration-color: rgb(255, 255, 255);
-	text-decoration-line: none;
-	text-decoration-style: solid;
-	text-size-adjust: 100%;
-	transition-delay: 0s;
-	transition-duration: 0.35s;	
-	transition-property: all;
-	transition-timing-function: ease;
-	user-select: none;
-	width: auto;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.nav-link::hover {
-	background-color: rgba(0, 0, 0, 10);
+	background-color:rgba(0, 0, 0, 0);
+	box-sizing:border-box;
+	color:rgb(255, 255, 255);
+	cursor:pointer;
+	display:inline-block;
+	font-family:Roboto, sans-serif;
+	font-size:16px;
+	font-weight:300;
+	height:34px;
+	line-height:24px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	padding-bottom:8px;
+	padding-top:8px;
+	position: absolute;
+	text-align:center;
+	text-decoration-color:rgb(255, 255, 255);
+	text-decoration-line:none;
+	text-decoration-style:solid;
+	text-size-adjust:100%;
+	transition-delay:0s;
+	transition-duration:0.35s;
+	transition-property:all;
+	transition-timing-function:ease;
+	user-select:none;
+	width:34px;
+	-webkit-tap-highlight-color:rgb(255, 255, 255);
 }
 
 .fab {
@@ -158,6 +144,34 @@ html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.btn {
+  font-family: sans-serif;
+  line-height: 31px;
+  position: absolute;
+  padding: 5px 22px;
+  border: 0;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none !important;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  left: 38%;
+  top: 1760px;
+}
+
+.titleI {
+	position: absolute;
+	top: 800px;
+	left: 36%;
+	font-family: sans-serif;
+}
+
 .info {
 	position: absolute;
 	top: 850px;
@@ -166,6 +180,88 @@ html {
 	font-family: sans-serif;
 }
 
+.downloadtitle {
+	position: absolute;
+	top: 1500px;
+	left: 36%;
+	font-family: sans-serif;
+}
+
+.downloaddescription {
+	position: absolute;
+	top: 1550px;
+	left: 25%;
+	width: 45%;
+	font-family: sans-serif;
+}
+
+.btn-default {
+	color: #fff;
+	background-color: #2BBBAD;
+}
+
 ::-webkit-scrollbar {
 	width: 0px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: rgba(255, 255, 255, .10) !important;
+  color: #fff !important;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #30cfc0 !important;
+  color: #fff !important;
+}
+
+.waves-effect {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.waves-effect .waves-ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.waves-effect.waves-light .waves-ripple {
+  background-color: rgba(255, 255, 255, 0.45);
 }
