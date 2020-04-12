@@ -16,14 +16,6 @@ html {
 	overflow: hidden;
 }
 
-.light {
-	position: absolute;
-	width: 40%;
-	height: 40%;
-	left: 40%;
-	top: 25%;
-}
-
 .dark {
 	position: absolute;
 	width: 18%;
