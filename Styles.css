@@ -257,3 +257,46 @@ html {
 .waves-effect.waves-light .waves-ripple {
   background-color: rgba(255, 255, 255, 0.45);
 }
+
+@media only screen and (max-width:929px) {
+	.icon {
+		width: 48px;
+	}
+
+	.title {
+		left: 50px;
+	}
+
+	.dark {
+		left: 8%;
+		width: 400px;
+	}
+
+	.titleI {
+		text-align: center;
+		left: 0;
+		top: 750px;
+		width: 100%;
+	}
+
+	.info {
+		text-align: center;
+		left: 0px;
+		width: 100%;
+	}
+
+	.downloaddescription {
+		text-align: center;
+		left: 0px;
+		width: 100%;		
+	}
+
+	.btn {
+		display: none;
+	}
+
+	.topbar {
+	  	width: 100%;
+	  	height: 9%;
+	}
+}
