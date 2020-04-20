@@ -53,7 +53,50 @@
 		</div>
 		<script>
 			if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-				alert("You're using Mobile Device!!")
+				var style = document.createElement('style');
+				style.innerHTML = `
+				.icon {
+					width: 48px;
+				}
+
+				.title {
+					left: 50px;
+				}
+
+				.dark {
+					left: 8%;
+					width: 400px;
+				}
+
+				.titleI {
+					text-align: center;
+					left: 0;
+					top: 750px;
+					width: 100%;
+				}
+
+				.info {
+					text-align: center;
+					left: 0px;
+					width: 100%;
+				}
+
+				.downloaddescription {
+					text-align: center;
+					left: 0px;
+					width: 100%;		
+				}
+
+				.btn {
+					display: none;
+				}
+
+				.topbar {
+					width: 100%;
+					height: 9%;
+				}
+				`;
+				document.head.appendChild(style);
 			}
 			
 			var mybutton = document.getElementById("topbar");
