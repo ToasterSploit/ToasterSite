@@ -258,7 +258,7 @@ html {
   background-color: rgba(255, 255, 255, 0.45);
 }
 
-@media only screen and (max-width:929px) {
+@media only screen and (max-width: 499px) {
 	.icon {
 		width: 48px;
 	}
