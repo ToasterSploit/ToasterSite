@@ -53,71 +53,70 @@
 		</div>
 		<script>
 			if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-				if ($(window).width() < 2080px) {
-					var style = document.createElement('style');
-					style.innerHTML = `
-					.icon {
-						width: 130px;
-					}
-
-					.title {
-						left: 130px;
-						font-size: 60px;
-					}
-
-					.dark {
-						left: 8%;
-						height: 500px;
-						width: 850px;
-					}
-
-					.titleI {
-						text-align: center;
-						left: 0;
-						top: 1900px;
-						width: 100%;
-					}
-
-					.info {
-						text-align: center;
-						top: 2000px;
-						left: 0px;
-						width: 100%;
-					}
-
-					.downloadtitle {
-						top: 2900px;
-						width: 100%;
-						left: 0;
-						text-align: center;
-					}
-
-					.downloaddescription {
-						top: 3000px;
-						text-align: center;
-						left: 0px;
-						width: 100%;
-					}
-
-					.btn {
-						display: none;
-					}
-
-					.topbar {
-						width: 100%;
-						height: 9%;
-					}
-					.nav-link {
-						left: 500px;
-						top: 0px;
-					}
-
-					.bottom {
-						top: 4050px;
-					}
-					  `;
-					document.head.appendChild(style);
+				var style = document.createElement('style');
+				style.innerHTML = `
+				.icon {
+					width: 130px;
 				}
+
+				.title {
+					left: 130px;
+					font-size: 60px;
+				}
+
+				.dark {
+					left: 8%;
+					height: 500px;
+					width: 850px;
+				}
+
+				.titleI {
+					text-align: center;
+					left: 0;
+					top: 1900px;
+					width: 100%;
+				}
+
+				.info {
+					text-align: center;
+					top: 2000px;
+					left: 0px;
+					width: 100%;
+				}
+
+				.downloadtitle {
+					top: 2900px;
+					width: 100%;
+					left: 0;
+					text-align: center;
+				}
+
+				.downloaddescription {
+					top: 3000px;
+					text-align: center;
+					left: 0px;
+					width: 100%;
+				}
+
+				.btn {
+					display: none;
+				}
+
+				.topbar {
+					width: 100%;
+					height: 9%;
+				}
+
+				.nav-link {
+					left: 500px;
+					top: 0px;
+				}
+
+				.bottom {
+					top: 4050px;
+				}
+				  `;
+				document.head.appendChild(style);
 			}
 			 
 			var mybutton = document.getElementById("topbar");
@@ -129,20 +128,17 @@
 					
 				} else
 				{
-					if (!$(window).width() > 880 || !$(window).height() > 880) {
-						if (!x.matches) {
-							if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-								mybutton.style.height = "8%";
-								mybutton.style.width = "100%";
-								$("#fadebutton1").fadeOut(230);
-								$("#fadebutton2").fadeOut(230);
-
+					if (!x.matches) {
+						if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+							mybutton.style.height = "8%";
+							mybutton.style.width = "100%";
+							$("#fadebutton1").fadeOut(230);
+							$("#fadebutton2").fadeOut(230);
 							} else {
-								mybutton.style.height = "100%";
-								mybutton.style.width = "25%";
-								$("#fadebutton1").fadeIn(100);
-								$("#fadebutton2").fadeIn(100);
-							}
+							mybutton.style.height = "100%";
+							mybutton.style.width = "25%";
+							$("#fadebutton1").fadeIn(100);
+							$("#fadebutton2").fadeIn(100);
 						}
 					}
 				}
