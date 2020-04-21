@@ -51,7 +51,67 @@
 			  	</a>
 			  </li>
 		</div>
-		<script>
+		<script>if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+				var style = document.createElement('style');
+				style.innerHTML = `
+				.icon {
+					width: 130px;
+				}
+
+				.title {
+					left: 130px;
+				}
+
+				.dark {
+					left: 8%;
+					width: 300px;
+					height: 800px;
+				}
+
+				.titleI {
+					text-align: center;
+					left: 0;
+					top: 1900px;
+					width: 100%;
+				}
+
+				.info {
+					text-align: center;
+					left: 0px;
+					width: 100%;
+					top: 2000px;
+				}
+
+				.downloadtitle {
+					left: 0;
+					width: 100%;
+					text-align: center;
+					top: 2900px;
+				}
+
+				.downloaddescription {
+					text-align: center;
+					left: 0px;
+					width: 100%;
+					top: 3000px;
+				}
+
+				.btn {
+					display: none;
+				}
+
+				.topbar {
+					width: 100%;
+					height: 9%;
+				}
+				.nav-link {
+					right: 50px;
+					top: 0px;
+				}
+				`;
+ 				document.head.appendChild(style);
+			}
+			 
 			var mybutton = document.getElementById("topbar");
 
 			window.onscroll = function() {scrollFunction()};
