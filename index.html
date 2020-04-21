@@ -53,69 +53,71 @@
 		</div>
 		<script>
 			if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-				var style = document.createElement('style');
-				  style.innerHTML = `
-				 .icon {
-					width: 130px;
-				}
+				if ($(window).width() < 480 || $(window).height() < 480) {
+					var style = document.createElement('style');
+					style.innerHTML = `
+					.icon {
+						width: 130px;
+					}
 
-				.title {
-					left: 130px;
-					font-size: 60px;
-				}
+					.title {
+						left: 130px;
+						font-size: 60px;
+					}
 
-				.dark {
-					left: 8%;
-					height: 500px;
-					width: 850px;
-				}
+					.dark {
+						left: 8%;
+						height: 500px;
+						width: 850px;
+					}
 
-				.titleI {
-					text-align: center;
-					left: 0;
-					top: 1900px;
-					width: 100%;
-				}
+					.titleI {
+						text-align: center;
+						left: 0;
+						top: 1900px;
+						width: 100%;
+					}
 
-				.info {
-					text-align: center;
-					top: 2000px;
-					left: 0px;
-					width: 100%;
-				}
+					.info {
+						text-align: center;
+						top: 2000px;
+						left: 0px;
+						width: 100%;
+					}
 
-				.downloadtitle {
-					top: 2900px;
-					width: 100%;
-					left: 0;
-					text-align: center;
-				}
+					.downloadtitle {
+						top: 2900px;
+						width: 100%;
+						left: 0;
+						text-align: center;
+					}
 
-				.downloaddescription {
-					top: 3000px;
-					text-align: center;
-					left: 0px;
-					width: 100%;
-				}
+					.downloaddescription {
+						top: 3000px;
+						text-align: center;
+						left: 0px;
+						width: 100%;
+					}
 
-				.btn {
-					display: none;
-				}
+					.btn {
+						display: none;
+					}
 
-				.topbar {
-					width: 100%;
-					height: 9%;
+					.topbar {
+						width: 100%;
+						height: 9%;
+					}
+					.nav-link {
+						left: 500px;
+						top: 0px;
+					}
+
+					.bottom {
+						top: 4050px;
+					}
+					  `;
+					document.head.appendChild(style);
 				}
-				.nav-link {
-					left: 500px;
-					top: 0px;
-				}
-				
-				.bottom {
-					top: 4050px;
-				}
-				  `;
-  				document.head.appendChild(style);
 			}
 			 
 			var mybutton = document.getElementById("topbar");
