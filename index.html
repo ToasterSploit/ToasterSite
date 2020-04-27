@@ -128,20 +128,16 @@
 					//this is just nothing
 				} else
 				{
-					if ($(window).width() < 480 || $(window).height() < 480) {
-						if (!x.matches) {
-							if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-								mybutton.style.height = "8%";
-								mybutton.style.width = "100%";
-								$("#fadebutton1").fadeOut(230);
-								$("#fadebutton2").fadeOut(230);
-								} else {
-								mybutton.style.height = "100%";
-								mybutton.style.width = "25%";
-								$("#fadebutton1").fadeIn(100);
-								$("#fadebutton2").fadeIn(100);
-							}
-						}
+					if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+						mybutton.style.height = "8%";
+						mybutton.style.width = "100%";
+						$("#fadebutton1").fadeOut(230);
+						$("#fadebutton2").fadeOut(230);
+						} else {
+						mybutton.style.height = "100%";
+						mybutton.style.width = "25%";
+						$("#fadebutton1").fadeIn(100);
+						$("#fadebutton2").fadeIn(100);
 					}
 				}
 				
