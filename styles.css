@@ -44,7 +44,7 @@ body {
 
 .dark input::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 10px;
+    width: 0px;
     height: 100%;
     background-color: #111;
     cursor: pointer;
