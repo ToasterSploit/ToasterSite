@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>ToasterSploit</title>
+        <link rel="icon" href="Files/Toaster.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@%               
+              &@%,,,,,,,,,(*,,,,,,,,,,,,,,,,@@              
+              &@#,,,,,,*@@&,,,,(@@/,,,,,,,,,@@              
+               .@@@@,,/@/,,,,@@&,,,,(&,,/@@@@               
+                  @@,,,,,,(@@/,,,,@@&,,,(@#                 
+                  @@,,,*@@&,,,,(@@/,,,,,(@#                 
+                  @@,,/@/,,,*@@&,,,,(@@*(@#                 
+                  @@,,,,,,,@@/,,,,(@&,,,(@#                 
+           %@@@@@@@@&&&&&&&&&&&&&&&&&&&&&@@@@@@@@*          
+        @@&(/////////////////////////////////////#@@@       
+       @@/(@@#/////////////////////////////////////(@@      
+       @@/#@%/////////////////////////////////////((@@@@@.  
+       @@/(#(//////////////////////////////////(((((@@((%@@ 
+       @@/#@%////////////////////////////////(((((((@@@@@#  
+       @@/#@%/////////////////////////////((((((((((@@      
+       @@/#@%/////////////////////////((((((((((((((@@      
+       @@/#@%/////////////////////((((((((((((((((((@@      
+       @@////////////////////(((((((((((((((((((((((@@      
+       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      
+       @@/////((((((((((((((((((((((((((((((((((((((@@      
+       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      
+         %@&%&@%                             @@%%@@         
+          ,@@@,                               @@@@  
+          
+          Your not suposed to be in here!
+        -->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <div class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        <div class="overflow"></div>
+        <div class="dark">
+            <div class="original-image"></div>
+            <input type="range" value="20" min="0" max="100">
+        </div>
+        <div id="topBar">
+            <img id="gif" src="Files/Toaster.gif" ondragstart="return false;">
+            <h1 id="TopBarTXT">ToasterSploit</h3>
+        </div>
+        <button onclick="window.location.replace('https://cdn.discordapp.com/attachments/656059404965117952/737991811246719077/ToasterSploit.zip');" class="Download confetti-button">Download</button>
+        <script>
+            var animateButton = function(e) {
+            
+              e.preventDefault;
+              //reset animation
+              e.target.classList.remove('animate');
+            
+              e.target.classList.add('animate');
+              setTimeout(function(){
+                e.target.classList.remove('animate');
+              },700);
+            };
+            
+            var classname = document.getElementsByClassName("confetti-button");
+            
+            for (var i = 0; i < classname.length; i++) {
+              classname[i].addEventListener('click', animateButton, false);
+            }
+            </script>
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              
+                ga('create', 'UA-46156385-1', 'cssscript.com');
+                ga('send', 'pageview');
+            
+        </script>
+        <script>
+            document.querySelector('.dark input').addEventListener("input", 
+            function(){
+                document.querySelector('.original-image').style.width = this.value + "%";
+            });
+
+            if (document.addEventListener) {
+                document.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                    window.event.returnValue = false;
+                });
+            }
+        </script>
+    </body>
+</html>
